@@ -8,19 +8,22 @@
     <title>Dice_ROller</title>
 </head>
 <body>
-    <div class="dice-roller">
-        <h1><i class="fas fa-dice-d6"></i> Dice Roller</h1>
-        <button onClick="window.location.reload();">Clear</button>
-        <button onclick="dise()"><i class="fas fa-dice-dise"></i> dise</button>
-        <div id="rollResult"></div>
-        <div id="history"></div>
-      </div>
-
-
-
-
- 
-
+    <div id="diceContainer">
+        <h1>Dice Roller</h1>
+        <label for="numberofRolls">Number of Dice  </label>
+           <input type="text" id="dice" required minlength="1"
+            maxlength="3" size="3">
+           
+           <button id="roll">Roll!</button>
+           <h2 id="total-number"></h2>
+           
+           <button id="total-rolls">Show All Rolls</button>
+           <ol id="list"> 
+               
+           </ol>
+           <button id="reset"> Reset </button>    
+    </div>
+      
 <script src="assets/javascript/main.js"></script>
 </body>
 </html>
